@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Built-in Functions</title>
+	<script type="text/javascript">
+		let greet = "selamat mengerjakan";
+		let matkul = "PBO, PTI, Pemweb, SBD";
+		//memotong string pada variable matkul dari karakter ke-5 sampai ke-8
+		//sehingga menyisakan kata 'PTI' dan ditampung ke variable selectedMatkul
+		let	selectedMatkul=matkul.slice(5,8);
+
+		let now = new Date(); // menginstansiasi objek Date
+
+		// mengambil bulan berdasarkan waktu lokal yang di representasikan dengan angka
+		//dan ditampung ke dalam variable month
+		// 0 (januari) sampai 11 (februari)
+		let month = now.getMonth()+1;
+		// meng-concatenate atau meggabungkan string dan ditampilkan ke console
+		console.log(greet+selectedMatkul+'pada bulan ke-' +month);
+	</script>
+</head>
+<body>
+
+</body>
+</html>
